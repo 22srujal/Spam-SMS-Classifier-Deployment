@@ -1,11 +1,10 @@
-Flask==1.1.1
-gunicorn==19.9.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
-MarkupSafe==1.1.1
-Werkzeug==0.15.5
-numpy>=1.9.2
-scipy>=0.15.1
-scikit-learn>=0.18
-matplotlib>=1.4.3
-pandas>=0.19
+Flask>=3.1,<4
+gunicorn>=22,<23
+
+# ML/runtime
+numpy>=2.0,<3
+scipy>=1.11,<2
+scikit-learn>=1.8,<2
+
+# Training/data utilities (optional at runtime, required for retraining)
+pandas>=2.2,<4

@@ -20,3 +20,20 @@ _**----- Important Note -----**_<br />
 • Sorry for the inconvenience.
 
 ![Heroku-Error](readme_resources/application-error-heroku.png)
+
+## Run locally (Python 3.12+)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+
+python -m pip install -r requirements.txt
+
+# Optional: retrain and regenerate the model artifacts
+python "Spam SMS Classifier - Deployment.py"
+
+# Start the web app
+gunicorn -b 127.0.0.1:8000 app:app
+```
+
+Then open http://127.0.0.1:8000
