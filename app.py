@@ -16,6 +16,7 @@ with MODEL_PATH.open('rb') as model_file:
 with VECTORIZER_PATH.open('rb') as vectorizer_file:
 	cv = pickle.load(vectorizer_file)
 
+
 app = Flask(__name__)
 
 @app.route('/')
